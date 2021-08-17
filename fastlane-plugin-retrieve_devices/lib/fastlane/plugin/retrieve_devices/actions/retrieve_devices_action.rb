@@ -36,7 +36,6 @@ module Fastlane
         end
 
         Actions.lane_context[SharedValues::DEVICES_FOR_APPLE_CERTIFICATE] = existing_devices
-        # # sh "shellcommand ./path"
       end
 
       #####################################################
