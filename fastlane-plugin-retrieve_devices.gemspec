@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'lachlan_young@hotmail.com'
 
   spec.summary       = 'retrieve all devices registered to your apple certrificate'
-  spec.homepage      = "https://github.com/builtbyproxy/fastlane-plugin-retrieve_devices"
+  spec.homepage      = "https://github.com/builtbyproxy/fastlane-plugin-retrieve-devices"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
