@@ -14,6 +14,8 @@ fastlane add_plugin retrieve_devices
 
 retrieve all devices registered to your apple certrificate
 
+This is a fastlane plugin which will provide an action to retrieve a list of names and UDIDs of each device registered with your Apple Certificate. This list is exactly the same as the list used to compare against what is/isn't registered in the `register_device/s` action.
+
 ### Running in your Fastfile
 In the relevant fastlane `lane`, call `retrieve_devices()` where required. 
 
