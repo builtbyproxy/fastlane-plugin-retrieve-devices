@@ -14,7 +14,14 @@ fastlane add_plugin retrieve_devices
 
 retrieve all devices registered to your apple certrificate
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+### Running in your Fastfile
+In the relevant fastlane `lane`, call `retrieve_devices()` where required. 
+
+The output can be accessed with `lane_context[SharedValues::DEVICES_FOR_APPLE_CERTIFICATE]`
+
+### Running in your CLI
+the `retrieve_devices` plugin is able to be used the same as usual plugins.
+Run `fastlane action retrieve_devices` for the latest documentation, and then `fastlane run retrieve_devices` for an output of the devices attached to your fastlane certificate.
 
 ## Example
 
@@ -34,6 +41,20 @@ To automatically fix many of the styling issues, use
 ```
 rubocop -a
 ```
+
+## Action Options
+
+   Key | Description | Env Var(s)
+:-------------------------:|:-------------------------:|:-------------------------:
+`api_key_path` | [Path to your App Store Connect API Key JSON file](https://docs.fastlane.tools/app-store-connect-api/#using-fastlane-api-key-json-file) | FL_RETRIEVE_DEVICES_API_KEY_PATH |
+|`api_key` | [Your App Store Connect API Key information](https://docs.fastlane.tools/app-store-connect-api/#use-return-value-and-pass-in-as-an-option) | APP_STORE_CONNECT_API_KEY |
+| `username` | *Optional:* Your Apple ID | DELIVER_USER |
+
+## Action Output
+
+   Key  |  Description 
+:-------------------------:|:-------------------------:
+`DEVICES_FOR_APPLE_CERTIFICATE` | A hash with the Name and UDID of each device registered with Apple
 
 ## Issues and Feedback
 
