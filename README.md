@@ -21,7 +21,8 @@ The output can be accessed with `lane_context[SharedValues::DEVICES_FOR_APPLE_CE
 
 ### Running in your CLI
 the `retrieve_devices` plugin is able to be used the same as usual plugins.
-Run `fastlane action retrieve_devices` for the latest documentation, and then `fastlane run retrieve_devices` for an output of the devices attached to your fastlane certificate.
+
+Run `fastlane run retrieve_devices` for an output of the devices attached to your fastlane certificate.
 
 ## Example
 
