@@ -5,11 +5,11 @@ require 'fastlane/plugin/retrieve_devices/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-retrieve_devices'
   spec.version       = Fastlane::RetrieveDevices::VERSION
-  spec.author        = 'Lachlan Young'
+  spec.author        = 'Lachlan Young, BuiltByProxy'
   spec.email         = 'lachlan_young@hotmail.com'
 
   spec.summary       = 'retrieve all devices registered to your apple certrificate'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-retrieve_devices"
+  spec.homepage      = "https://github.com/builtbyproxy/fastlane-plugin-retrieve_devices"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
